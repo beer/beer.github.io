@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Beer's Blog]]></title>
+  <link href="http://beer.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://beer.github.io/"/>
+  <updated>2015-02-28T15:31:56+08:00</updated>
+  <id>http://beer.github.io/</id>
+  <author>
+    <name><![CDATA[Beer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pick a Theme for Only One Page]]></title>
+    <link href="http://beer.github.io/blog/2015/02/28/one-page-theme/"/>
+    <updated>2015-02-28T14:16:45+08:00</updated>
+    <id>http://beer.github.io/blog/2015/02/28/one-page-theme</id>
+    <content type="html"><![CDATA[<p>As you can see on this page, it is possible to have a different theme for a given page or post (this one is the mighty <a href="http://bootswatch.com/slate/bootstrap.min.css">slate</a>) !</p>
+
+<p>The Trick
+We will use a <a href="http://jekyllrb.com/docs/frontmatter/">front-matter</a> variable to select the theme to use. First, adapt <code>source/_includes/custom/head.html</code>:</p>
+
+<p>&#8220;` html source/_includes/custom/head.html</p>
+
+<!-- ... -->
+
+
+<p>{ % if page.bootstrap_theme_url %}
+    <link href="" rel="stylesheet" type="text/css">
+{ % else %}
+    <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+{ % endif %}</p>
+
+<!-- ... -->
+
+
+<p>&#8220;`</p>
+
+<p>Now, the Bootstrap theme will be choosen depending on <code>page.bootstrap_theme_url</code>. As an example, here is the front of this page:</p>
+
+<h2><figure class='code'><figcaption><span>example front </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p>layout: post
+</span><span class='line'>bootstrap_theme_url: &lt;a href="http://bootswatch.com/slate/bootstrap.min.css">http://bootswatch.com/slate/bootstrap.min.css&lt;/a>
+</span><span class='line'>title: &ldquo;pick a theme for only one page&rdquo;
+</span><span class='line'>comments: true&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>categories: octopress&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

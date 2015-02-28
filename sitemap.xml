@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://beer.github.io/blog/2015/02/28/one-page-theme/</loc>
+    <lastmod>2015-02-28T14:16:45+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://beer.github.io/blog/2015/02/27/first-octopress-post/</loc>
     <lastmod>2015-02-27T21:08:08+08:00</lastmod>
   </url>
   <url>
     <loc>http://beer.github.io/blog/archives/</loc>
-    <lastmod>2015-02-28T13:47:08+08:00</lastmod>
+    <lastmod>2015-02-28T15:31:56+08:00</lastmod>
   </url>
   <url>
     <loc>http://beer.github.io/</loc>
-    <lastmod>2015-02-28T13:47:08+08:00</lastmod>
+    <lastmod>2015-02-28T15:31:56+08:00</lastmod>
   </url>
   <url>
     <loc>http://beer.github.io/blog/categories/</loc>
-    <lastmod>2015-02-28T13:47:08+08:00</lastmod>
+    <lastmod>2015-02-28T15:31:56+08:00</lastmod>
   </url>
 </urlset>

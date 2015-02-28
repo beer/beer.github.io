@@ -4,7 +4,7 @@
   <title><![CDATA[Beer's Blog]]></title>
   <link href="http://beer.github.io/atom.xml" rel="self"/>
   <link href="http://beer.github.io/"/>
-  <updated>2015-02-28T13:47:08+08:00</updated>
+  <updated>2015-02-28T15:31:56+08:00</updated>
   <id>http://beer.github.io/</id>
   <author>
     <name><![CDATA[Beer]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pick a Theme for Only One Page]]></title>
+    <link href="http://beer.github.io/blog/2015/02/28/one-page-theme/"/>
+    <updated>2015-02-28T14:16:45+08:00</updated>
+    <id>http://beer.github.io/blog/2015/02/28/one-page-theme</id>
+    <content type="html"><![CDATA[<p>As you can see on this page, it is possible to have a different theme for a given page or post (this one is the mighty <a href="http://bootswatch.com/slate/bootstrap.min.css">slate</a>) !</p>
+
+<p>The Trick
+We will use a <a href="http://jekyllrb.com/docs/frontmatter/">front-matter</a> variable to select the theme to use. First, adapt <code>source/_includes/custom/head.html</code>:</p>
+
+<figure class='code'><figcaption><span>source/_includes/custom/head.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
+</span><span class='line'>{ % if page.bootstrap_theme_url %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://bootswatch.com/slate/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % else %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap-theme.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % endif %}
+</span><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, the Bootstrap theme will be choosen depending on <code>page.bootstrap_theme_url</code>. As an example, here is the front of this page:</p>
+
+<figure class='code'><figcaption><span>example front </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: post
+</span><span class='line'>bootstrap_theme_url: http://bootswatch.com/slate/bootstrap.min.css
+</span><span class='line'>title: "pick a theme for only one page"
+</span><span class='line'>comments: true
+</span><span class='line'>categories: octopress
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Octopress Post]]></title>

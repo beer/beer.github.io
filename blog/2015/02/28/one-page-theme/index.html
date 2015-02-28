@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>First Octopress Post - Beer&#8217;s Blog</title>
+  <title>Pick a Theme for Only One Page - Beer&#8217;s Blog</title>
   <meta name="author" content="Beer">
 
   
@@ -14,21 +14,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://beer.github.io/blog/2015/02/27/first-octopress-post/">
+  <link rel="canonical" href="http://beer.github.io/blog/2015/02/28/one-page-theme/">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Beer's Blog" type="application/atom+xml">
 
   <!-- http://opengraphprotocol.org/ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://beer.github.io/blog/2015/02/27/first-octopress-post/">
-  <meta property="og:title" content="First Octopress Post - Beer's Blog">
+  <meta property="og:url" content="http://beer.github.io/blog/2015/02/28/one-page-theme/">
+  <meta property="og:title" content="Pick a Theme for Only One Page - Beer's Blog">
   
 
   <script src="/javascripts/libs/jquery/jquery-2.1.3.min.js"></script>
 
-    <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="http://bootswatch.com/slate/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
 
@@ -124,7 +123,7 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-27T21:08:08+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-28T14:16:45+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
         
            | <a href="#disqus_thread" itemprop="discussionUrl"
              data-disqus-identifier="http://beer.github.io">Comments</a>
@@ -133,96 +132,54 @@
     
     
     <h1 class="entry-title" itemprop="name headline">
-        First Octopress Post
+        Pick a Theme for Only One Page
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><p><img src="http://placekitten.com/890/280"></p>
+<div class="entry-content clearfix" itemprop="articleBody description"><p>As you can see on this page, it is possible to have a different theme for a given page or post (this one is the mighty <a href="http://bootswatch.com/slate/bootstrap.min.css">slate</a>) !</p>
 
-<!-- more -->
+<p>The Trick
+We will use a <a href="http://jekyllrb.com/docs/frontmatter/">front-matter</a> variable to select the theme to use. First, adapt <code>source/_includes/custom/head.html</code>:</p>
 
-
-<h1>This is an H1</h1>
-
-<h2>This is an H2</h2>
-
-<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.</p>
-
-<h2>This is a header.</h2>
-
-<ol>
-<li>This is the first list item.</li>
-<li>This is the second list item.</li>
-</ol>
-
-
-<blockquote><p>Here&rsquo;s some example code:</p></blockquote>
-
-<pre><code>return shell_exec("echo $input | $markdown_script");
-</code></pre></blockquote>
-
-<ol>
-<li>Bird</li>
-<li>McHale</li>
-<li><p>Parish</p></li>
-<li><p>title</p></li>
-<li>tiele</li>
-<li><p>sa</p></li>
-<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.</p></li>
-<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.</li>
-</ol>
-
-
-<p>This is <a href="http://example.com/" title="Title">an example</a> inline link.</p>
-
-<p><a href="http://example.net/">This link</a> has no title attribute.</p>
-
-<p>This is <a href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
-
-<p><em>single asterisks</em></p>
-
-<p><em>single underscores</em></p>
-
-<p><strong>double asterisks</strong></p>
-
-<p><strong>double underscores</strong></p>
-
-<p>Use the <code>printf()</code> function.</p>
-
-<p><code>There is a literal backtick (`) here.</code></p>
-
-<p><img src="http://placekitten.com/890/280">
-<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" >
-<img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #3" >
-<img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten"></p>
-
-<p><img src="http://placekitten.com/320/250" title="Optional title" alt="Alt text" /></p>
-
-<p><video width='640' height='320' preload='metadata' controls poster='http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
-
-<p><span class='pullquote-right' data-pullquote='surround it like this'>
-Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, surround it like this and that&rsquo;s all there is to it.
-</span></p>
-
-<figure class='code'><figcaption><span>Javascript Array Syntax</span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>source/_includes/custom/head.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
+</span><span class='line'>{ % if page.bootstrap_theme_url %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://bootswatch.com/slate/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % else %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap-theme.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % endif %}
+</span><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Now, the Bootstrap theme will be choosen depending on <code>page.bootstrap_theme_url</code>. As an example, here is the front of this page:</p>
+
+<figure class='code'><figcaption><span>example front </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: post
+</span><span class='line'>bootstrap_theme_url: http://bootswatch.com/slate/bootstrap.min.css
+</span><span class='line'>title: "pick a theme for only one page"
+</span><span class='line'>comments: true
+</span><span class='line'>categories: octopress
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -247,15 +204,22 @@ the text you want to pull, surround it like this and that&rsquo;s all there is t
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-27T21:08:08+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-28T14:16:45+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
           
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bootstrap/'>bootstrap</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
 
 
         </p>
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://beer.github.io/blog/2015/02/27/first-octopress-post/" data-via="beerlee88" data-counturl="http://beer.github.io/blog/2015/02/27/first-octopress-post/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://beer.github.io/blog/2015/02/28/one-page-theme/" data-via="beerlee88" data-counturl="http://beer.github.io/blog/2015/02/28/one-page-theme/" >Tweet</a>
   
   
   
@@ -267,8 +231,8 @@ the text you want to pull, surround it like this and that&rsquo;s all there is t
         
           <ul class="meta text-muted pager">
             
+            <li class="previous"><a href="/blog/2015/02/27/first-octopress-post/" title="Previous Post: first octopress post">&laquo; first octopress post</a></li>
             
-            <li class="next"><a href="/blog/2015/02/28/one-page-theme/" title="Next Post: Pick a Theme for Only One Page">Pick a Theme for Only One Page &raquo;</a></li>
             
           </ul>
         
@@ -293,9 +257,9 @@ the text you want to pull, surround it like this and that&rsquo;s all there is t
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2015/02/28/one-page-theme/">Pick a Theme for Only One Page</a>
+    <a class="list-group-item active" href="/blog/2015/02/28/one-page-theme/">Pick a Theme for Only One Page</a>
     
-    <a class="list-group-item active" href="/blog/2015/02/27/first-octopress-post/">First Octopress Post</a>
+    <a class="list-group-item " href="/blog/2015/02/27/first-octopress-post/">First Octopress Post</a>
     
   </div>
 </section>
@@ -342,8 +306,8 @@ the text you want to pull, surround it like this and that&rsquo;s all there is t
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://beer.github.io/blog/2015/02/27/first-octopress-post/';
-        var disqus_url = 'http://beer.github.io/blog/2015/02/27/first-octopress-post/';
+        var disqus_identifier = 'http://beer.github.io/blog/2015/02/28/one-page-theme/';
+        var disqus_url = 'http://beer.github.io/blog/2015/02/28/one-page-theme/';
         var disqus_script = 'embed.js';
       
     (function () {

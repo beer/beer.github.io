@@ -86,3 +86,10 @@ the text you want to pull, {" surround it like this "} and that's all there is t
 var arr1 = new Array(arrayLength);
 var arr2 = new Array(element0, element1, ..., elementN);
 {% endcodeblock %}
+
+{% for post in site.posts %}
+{% puts %}
+Title: {{ post.title }}
+Content: {{ post.content }}
+{% endputs %}
+{% endfor %}is

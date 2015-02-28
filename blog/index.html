@@ -112,6 +112,132 @@
     <meta itemprop="url" content="http://beer.github.io" />
       
       
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-28T14:16:45+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+        
+           | <a href="/blog/2015/02/28/one-page-theme/#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://beer.github.io/blog/2015/02/28/one-page-theme/">Comments</a>
+        
+      </p>
+    
+    
+      <h2 class="entry-title" itemprop="name headline"><a href="/blog/2015/02/28/one-page-theme/" itemprop="url">Pick a Theme for Only One Page</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p>As you can see on this page, it is possible to have a different theme for a given page or post (this one is the mighty <a href="http://bootswatch.com/slate/bootstrap.min.css">slate</a>) !</p>
+
+<p>The Trick
+We will use a <a href="http://jekyllrb.com/docs/frontmatter/">front-matter</a> variable to select the theme to use. First, adapt <code>source/_includes/custom/head.html</code>:</p>
+
+<figure class='code'><figcaption><span>source/_includes/custom/head.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
+</span><span class='line'>{ % if page.bootstrap_theme_url %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://bootswatch.com/slate/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % else %}
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/assets/bootstrap/dist/css/bootstrap-theme.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>{ % endif %}
+</span><span class='line'><span class="c">&lt;!-- ... --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, the Bootstrap theme will be choosen depending on <code>page.bootstrap_theme_url</code>. As an example, here is the front of this page:</p>
+
+<figure class='code'><figcaption><span>example front </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: post
+</span><span class='line'>bootstrap_theme_url: http://bootswatch.com/slate/bootstrap.min.css
+</span><span class='line'>title: "pick a theme for only one page"
+</span><span class='line'>comments: true
+</span><span class='line'>categories: octopress
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2015-02-27T21:08:08+08:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
+        
+           | <a href="/blog/2015/02/27/first-octopress-post/#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://beer.github.io/blog/2015/02/27/first-octopress-post/">Comments</a>
+        
+      </p>
+    
+    
+      <h2 class="entry-title" itemprop="name headline"><a href="/blog/2015/02/27/first-octopress-post/" itemprop="url">First Octopress Post</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><p><img src="http://placekitten.com/890/280"></p>
+
+</div>
+  
+  
+    <footer>
+      <a class="btn btn-default" href="/blog/2015/02/27/first-octopress-post/">Read on &rarr;</a>
+    </footer>
+  
+
+
+        </article>
+      
     </div>
 
     <ul class="pager">

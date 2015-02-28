@@ -5,6 +5,9 @@ date: 2015-02-27 21:08:08 +0800
 comments: true
 categories: 
 ---
+
+{% img http://placekitten.com/890/280 %}
+<!-- more -->
 This is an H1
 =============
 

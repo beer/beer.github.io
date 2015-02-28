@@ -1,0 +1,20 @@
+#main {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+}
+#main.slide-active {
+    padding-top: 0
+}
+
+@media (min-width:768px) { 
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+    .navbar-header {
+        left: 0!important
+    }
+}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" title="toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,8 +17,11 @@
                 <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/blog/archives">Archives</a>
                 </li>
-                <li {% if page.navbar == 'Projects' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/projects">Projects</a>
+                <li {% if page.navbar == 'Projects' %}class="active dropdown"{% else %} class="dropdown" {% endif %}>
+                    <a href="{{ root_url }}/projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/projects">all</a></li>
+                    </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

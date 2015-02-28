@@ -74,3 +74,15 @@ Use the `printf()` function.
 {% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
 
 ![Alt text](http://placekitten.com/320/250 "Optional title")
+
+{% video http://s3.imathis.com/video/zero-to-fancy-buttons.mp4 640 320 http://s3.imathis.com/video/zero-to-fancy-buttons.png %}
+
+{% pullquote %}
+Surround your paragraph with the pull quote tags. Then when you come to
+the text you want to pull, {" surround it like this "} and that's all there is to it.
+{% endpullquote %}
+
+{% codeblock Javascript Array Syntax lang:js http://j.mp/pPUUmW MDN Documentation %}
+var arr1 = new Array(arrayLength);
+var arr2 = new Array(element0, element1, ..., elementN);
+{% endcodeblock %}

@@ -26,9 +26,12 @@
   
 
   <script src="/javascripts/libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="/javascripts/common.js"></script>
 
     <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+<link href="/stylesheets/common.css" rel="stylesheet" type="text/css">
 
 
 
@@ -54,7 +57,7 @@
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
     <div id="wrap">
       <header role="banner">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav id="slide-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" title="toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,18 +68,7 @@
             <a class="navbar-brand" href="/">Beer&#8217;s Blog</a>
         </div>
 
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li >
-                    <a rel="index" href="/blog">Blog</a>
-                </li>
-                <li >
-                    <a href="/blog/archives">Archives</a>
-                </li>
-                <li >
-                    <a href="/projects">Projects</a>
-                </li>
-            </ul>
+        <div id="slidemenu">
             <ul class="nav navbar-nav navbar-right">
                 
                     <li>
@@ -89,13 +81,28 @@
                     </li>
                 
                 <li>
-                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                    <a class="subscribe-rss hidden-xs hidden-sm" href="/atom.xml" title="subscribe via RSS">
                         <span class="visible-xs">RSS</span>
                         <img class="hidden-xs" src="/images/rss.png" alt="RSS">
                     </a>
                 </li>
                 
             </ul>
+            <ul class="nav navbar-nav">
+                <li >
+                    <a rel="index" href="/blog">Blog</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+                <li  class="dropdown" >
+                    <a href="/projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/projects">all</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
         </div>
     </div>
 </nav>

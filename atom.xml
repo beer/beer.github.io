@@ -4,7 +4,7 @@
   <title><![CDATA[Beer's Blog]]></title>
   <link href="http://beer.github.io/atom.xml" rel="self"/>
   <link href="http://beer.github.io/"/>
-  <updated>2015-02-28T12:05:06+08:00</updated>
+  <updated>2015-02-28T12:08:48+08:00</updated>
   <id>http://beer.github.io/</id>
   <author>
     <name><![CDATA[Beer]]></name>
@@ -18,7 +18,12 @@
     <link href="http://beer.github.io/blog/2015/02/27/first-octopress-post/"/>
     <updated>2015-02-27T21:08:08+08:00</updated>
     <id>http://beer.github.io/blog/2015/02/27/first-octopress-post</id>
-    <content type="html"><![CDATA[<h1>This is an H1</h1>
+    <content type="html"><![CDATA[<p><img src="http://placekitten.com/890/280"></p>
+
+<!-- more -->
+
+
+<h1>This is an H1</h1>
 
 <h2>This is an H2</h2>
 

@@ -87,9 +87,3 @@ var arr1 = new Array(arrayLength);
 var arr2 = new Array(element0, element1, ..., elementN);
 {% endcodeblock %}
 
-{% for post in site.posts %}
-{% puts %}
-Title: {{ post.title }}
-Content: {{ post.content }}
-{% endputs %}
-{% endfor %}is

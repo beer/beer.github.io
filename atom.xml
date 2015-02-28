@@ -4,7 +4,7 @@
   <title><![CDATA[Beer's Blog]]></title>
   <link href="http://beer.github.io/atom.xml" rel="self"/>
   <link href="http://beer.github.io/"/>
-  <updated>2015-02-28T13:16:06+08:00</updated>
+  <updated>2015-02-28T13:47:08+08:00</updated>
   <id>http://beer.github.io/</id>
   <author>
     <name><![CDATA[Beer]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[first octopress post]]></title>
+    <title type="html"><![CDATA[First Octopress Post]]></title>
     <link href="http://beer.github.io/blog/2015/02/27/first-octopress-post/"/>
     <updated>2015-02-27T21:08:08+08:00</updated>
     <id>http://beer.github.io/blog/2015/02/27/first-octopress-post</id>
@@ -99,6 +99,8 @@ the text you want to pull, surround it like this and that&rsquo;s all there is t
 </pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
 
 ]]></content>
   </entry>
